@@ -16,18 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4x-Mh-gY9">
-                                <rect key="frame" x="186" y="213" width="88" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBr-3g-dNF">
                                 <rect key="frame" x="168" y="485" width="78" height="30"/>
                                 <state key="normal" title="入力する"/>
                                 <connections>
-                                    <action selector="changeButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hu6-nJ-Lhq"/>
-                                    <segue destination="tjC-85-7AR" kind="show" id="9ta-Gx-gTZ"/>
+                                    <segue destination="tjC-85-7AR" kind="show" id="cu8-dc-VT5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRN-s8-6Ez">
@@ -40,22 +33,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="h4x-Mh-gY9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="186" id="9C8-BL-Iag"/>
                             <constraint firstItem="lRN-s8-6Ez" firstAttribute="top" secondItem="iBr-3g-dNF" secondAttribute="bottom" constant="56" id="Hxi-ug-ILt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h4x-Mh-gY9" secondAttribute="trailing" constant="140" id="IaS-xu-YVO"/>
                             <constraint firstAttribute="bottom" secondItem="iBr-3g-dNF" secondAttribute="bottom" constant="381" id="WTi-GO-wTn"/>
                             <constraint firstItem="lRN-s8-6Ez" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cGU-jN-sNO"/>
                             <constraint firstItem="iBr-3g-dNF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="168" id="lsg-cv-WfV"/>
                             <constraint firstItem="iBr-3g-dNF" firstAttribute="centerX" secondItem="lRN-s8-6Ez" secondAttribute="centerX" id="nI9-w0-a1y"/>
-                            <constraint firstItem="h4x-Mh-gY9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="qZJ-fS-wgt"/>
                             <constraint firstItem="lRN-s8-6Ez" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rYy-ka-CcF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ebq-SL-SXI"/>
-                    <connections>
-                        <outlet property="label" destination="h4x-Mh-gY9" id="Wab-RO-mio"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,6 +55,15 @@
                     <view key="view" contentMode="scaleToFill" id="F8Y-2y-WOy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P7F-ME-Wb1">
+                                <rect key="frame" x="143" y="337" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="0.1822222734691622" green="1" blue="0.89805106639173193" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="pbF-iA-dPx"/>
                     </view>
