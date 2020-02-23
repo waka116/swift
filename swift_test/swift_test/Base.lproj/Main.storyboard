@@ -82,7 +82,6 @@
                                 <rect key="frame" x="158" y="305" width="32" height="30"/>
                                 <state key="normal" title="save"/>
                                 <connections>
-                                    <action selector="label2:" destination="f2t-B3-iln" eventType="touchUpInside" id="ERG-0E-mPs"/>
                                     <action selector="save:" destination="tjC-85-7AR" eventType="touchUpInside" id="WoN-UN-boG"/>
                                 </connections>
                             </button>
