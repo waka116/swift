@@ -17,11 +17,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    ////////////////////////////
+    //入力フォームの設定
+    ////////////////////////////
+    //年齢
+    @IBOutlet weak var inputdata_age: UITextField!
     
-    
-    @IBOutlet weak var inputdata: UITextField!
-    
-    
+    //出力ラベルの設定
     @IBOutlet weak var label2: UILabel!
 
     //保存
@@ -29,8 +31,11 @@ class ViewController: UIViewController {
         // UserDefaultsの参照
         let userDefaults = UserDefaults.standard
         
-        // sampleというキーで値「aiueo」を保存する
-        userDefaults.set(inputdata.text!, forKey: "sample")
+        ////////////////////////////
+        // 入力フォームからxmlに値を保存
+        ////////////////////////////
+        // 年齢
+        userDefaults.set(inputdata_age.text!, forKey: "age")
         
         // UserDefaultsへの値の保存を明示的に行う
         userDefaults.synchronize()
@@ -52,12 +57,12 @@ class ViewController: UIViewController {
         // UserDefaultsの参照
         let userDefaults = UserDefaults.standard
         
-        // sampleというキーを指定して保存していたString型の値を取り出す
-        let value = userDefaults.string(forKey: "sample")
+        // xmlからデータを取得
+        let value = userDefaults.string(forKey: "age")
         
+        //取得したデータを表示
         label2.text = value
         
-       // label2.text = value
     }
     
 }
