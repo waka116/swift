@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oFt-u6-1er">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oFt-u6-1er">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -60,14 +58,8 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P7F-ME-Wb1">
                                 <rect key="frame" x="138" y="226" width="82" height="30"/>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="inputForm:" destination="tjC-85-7AR" eventType="editingDidEnd" id="MLA-YK-I09"/>
-                                    <action selector="label1:" destination="f2t-B3-iln" eventType="editingDidEnd" id="w7y-mh-CtE"/>
-                                    <action selector="label:" destination="f2t-B3-iln" eventType="editingDidEnd" id="xYW-aP-z79"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5k-Qt-tHp">
                                 <rect key="frame" x="158" y="125" width="42" height="50"/>
@@ -113,14 +105,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0v0-HB-M12" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="f2t-B3-iln" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1776.8115942028987" y="114.50892857142857"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2gU-8H-EQ6">
             <objects>
-                <viewController id="slQ-G5-ewd" sceneMemberID="viewController">
+                <viewController id="slQ-G5-ewd" customClass="ViewController" customModule="swift_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z90-uo-41E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,6 +134,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMS-vY-yMY">
+                                <rect key="frame" x="155" y="408" width="119" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="result:" destination="slQ-G5-ewd" eventType="touchUpInside" id="8JP-g7-Kuy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.73759340556264963" blue="0.88642793580806412" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -158,6 +158,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6qC-by-kvJ"/>
                     </view>
+                    <connections>
+                        <outlet property="ressult_age" destination="6ce-Tm-NCW" id="6AH-QJ-HjJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LAL-2f-K8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

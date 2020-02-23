@@ -65,5 +65,22 @@ class ViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var ressult_age: UILabel!
+    
+
+    
+    @IBAction func result(_ sender: Any) {
+        // UserDefaultsの参照
+        let userDefaults = UserDefaults.standard
+        
+        // xmlからデータを取得
+        let value = userDefaults.string(forKey: "age")
+        
+        //取得したデータを表示
+        ressult_age.text = value
+        
+    }
+    
+    
 }
 
