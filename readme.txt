@@ -15,4 +15,5 @@ git clone <url>
 git rm <FileName> -r
 git rm <FileName> -r -f
 
-
+view遷移時の処理
+https://qiita.com/entaku0818/items/87d4e7225e23db0b01ff
