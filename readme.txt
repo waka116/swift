@@ -12,3 +12,7 @@ git pull swift master
 
 git clone <url>
 
+git rm <FileName> -r
+git rm <FileName> -r -f
+
+
