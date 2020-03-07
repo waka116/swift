@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     //入力フォームの設定
     ////////////////////////////
     //年齢
-    @IBOutlet weak var inputdata: UITextField!
+    @IBOutlet weak var inputAge: UITextField!
     
     //出力ラベルの設定
     @IBOutlet weak var label2: UILabel!
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         // 入力フォームからxmlに値を保存
         ////////////////////////////
         // 年齢
-        userDefaults.set(inputdata.text!, forKey: "age")
+        userDefaults.set(inputAge.text!, forKey: "age")
         
         // UserDefaultsへの値の保存を明示的に行う
         userDefaults.synchronize()
